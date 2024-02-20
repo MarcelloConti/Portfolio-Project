@@ -168,6 +168,7 @@ section .content h3{
 
 section .content p{
     margin-bottom: 2rem;
+    display: flex;
     color: #ccc;
 }
 
@@ -360,4 +361,84 @@ section .header{
     display: flex;
 }
 
+#expimg{
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
 
+
+@media (max-width: 768px){
+
+    body{
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav-links .link a{
+        padding-bottom: 0;
+    }
+
+    .nav-links .link a::after{
+        width: 0;
+    }
+
+    header{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header .content h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    header .image img{
+        max-width: 400px;
+    }
+
+    .about{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section .content h2{
+        margin-left: 0;
+    }
+
+    section .content li{
+        margin-left: 0;
+    }
+
+    section .image img{
+        max-width: 400px;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .features .card{
+        text-align: center;
+    }
+
+    .experiences{
+        margin-top: 10rem;
+    }
+
+    .experiences img{
+        max-width: 400px;
+    }
+
+}
